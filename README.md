@@ -1,9 +1,14 @@
 ## Restaurant Page
 
-This is a landing page for a website that is completely dynamically rendered by JavaScript. 
+This is a landing page for a website that is completely dynamically rendered by JavaScript.
 
-#####  Webpack
+##### Webpack
+
 I am also using my custom webpack config to bundle the source files. You can check out my setup at `./webpack.config.js`
 
 ### Roadmap
-[x] Set up webpack
+
+- [x] Set up webpack
+- [x] Set up HTML skeleton with desired markup that will be added dynamically by JS later
+- [x] Styling
+- [x] CSS-only parallax effect for section images
