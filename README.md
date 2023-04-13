@@ -30,6 +30,9 @@ webpack-restaurant-SPA
     |- /components              // reusable app blocks
         |- Header.js            // header component
         ...            
+    |- /pages                   // app pages eg home, about, menu, etc
+        |- home.js              // index/home page
+        ...            
     |- utils.js                 // utility functions e.g createElement
 ```
 
@@ -48,6 +51,7 @@ Since it becomes difficult to track down warnings and errors to the location whe
 - [x] Style the HTML skeleton (`./src/skeleton/style.css`)
 - [x] CSS-only parallax effect for section images
 - [x] Set up webpack CSS and image loaders
-- [ ] Dynamically generate page content from JS
+- [x] Dynamically generate page content from JS
+- [ ] Create routing solution
 - [ ] Make site mobile responsive
 - [ ] Set up JSX loader
