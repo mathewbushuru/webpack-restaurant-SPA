@@ -52,6 +52,13 @@ Since it becomes difficult to track down warnings and errors to the location whe
 - [x] CSS-only parallax effect for section images
 - [x] Set up webpack CSS and image loaders
 - [x] Dynamically generate page content from JS
-- [ ] Create routing solution
+- [x] Create routing solution that does not reload page
+- [ ] Add content to About, Menu pages, etc
 - [ ] Make site mobile responsive
 - [ ] Set up JSX loader
+- [ ] Code splitting
+- [ ] Hot Module Replacement (HMR)
+- [ ] Tree shaking and further optimization
+
+### Progress
+![progress](./src/images/progress.jpg)

@@ -1,21 +1,17 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import HeroReview from "../components/HeroReview";
-import Divider from "../components/ui/Divider";
-import MenuSection from "../components/MenuSection";
-import ParallaxSection1 from "../components/ParallaxSection1";
-import NewsletterSection from "../components/NewsletterSection";
-import ParallaxSection2 from "../components/ParallaxSection2";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
+import NewsletterSection from "../components/NewsletterSection";
+import ParallaxSection1 from "../components/ParallaxSection1";
+import ParallaxSection2 from "../components/ParallaxSection2";
+import Divider from "../components/ui/Divider";
+
+import { createElement } from "../utils";
 
 const careerElements = [
   Header,
-  // Hero,
-  // HeroReview,
-  // Divider,
-  // MenuSection,
-  // Divider,
-  // ParallaxSection1,
+  ComingSoon,
+  Divider,
+  ParallaxSection1,
   NewsletterSection,
   ParallaxSection2,
   Footer,
@@ -29,4 +25,20 @@ export default function CareerPage() {
   for (let element of careerElements) {
     root.appendChild(element());
   }
+}
+
+function ComingSoon() {
+  const h1El = createElement({
+    htmlEl: "h1",
+    content: "Career page coming soon!",
+    className:"comingSoon"
+  });
+
+  const heroEl = createElement({
+    htmlEl: "div",
+    className: "heroWrapper",
+    children: [h1El],
+  });
+
+  return heroEl;
 }

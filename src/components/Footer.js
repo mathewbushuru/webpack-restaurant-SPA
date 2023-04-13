@@ -34,7 +34,10 @@ export default function Footer() {
   for (let el of navItems) {
     const navItem = document.createElement("li");
     navItem.textContent = el.name;
-    navItem.onclick = ()=>Router(el.link)
+    navItem.onclick = () => {
+      window.scrollTo(0, 0);
+      Router(el.link);
+    };
     navItemsElChildren.push(navItem);
   }
 
@@ -69,7 +72,10 @@ export default function Footer() {
     content: "The Coruscant Cafe",
     className: "logo",
   });
-  footerLogo.onclick = () => Router("home");
+  footerLogo.onclick = () => {
+    window.scrollTo(0, 0);
+    Router("home");
+  };
 
   let hoursChildren = [];
   for (let item of hoursItems) {

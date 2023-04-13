@@ -102,6 +102,13 @@ a:hover {
   top: 35%;
   left: 62%;
 }
+.heroWrapper .comingSoon{
+  text-align: center;
+  padding-top: 180px;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: var(--secondary);
+}
 .heroReview {
   min-height: 250px;
   padding: 40px 0;
