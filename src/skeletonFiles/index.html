@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <nav>
+        <h2 class="logo"><a href="#">The Coruscant Cafe</a></h2>
+        <div class="navRight">
+          <ul class="navItems">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="navBtnGroup">
+            <button class="btn">Order</button>
+            <button class="btn">Reserve</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="heroWrapper">
+        <img src="./images/hero1.jpg" class="heroImg1" alt="restaurant image" />
+        <img src="./images/hero2.jpg" class="heroImg2" alt="restaurant image" />
+        <img src="./images/hero3.jpg" class="heroImg3" alt="restaurant image" />
+      </div>
+    </div>
+
+    <div class="heroReview">
+      <p>
+        "Countless motives exist for indulging in the culinary arts of the
+        galaxy – to convene with allies, to display one's power, or to
+        commemorate momentous occasions – but at the core, it is the necessity
+        to satisfy one's hunger, and none can satiate quite like The Coruscant
+        Cafe." <br /><br />
+        - EMPEROR Palpatine
+      </p>
+      <button class="btn">Reserve</button>
+    </div>
+
+    <div class="divider">
+      <img src="./images/divider.svg" alt="" />
+      <img src="./images/divider.svg" class="invertDivider" alt="" />
+    </div>
+
+    <div class="menuSection">
+      <img src="./images/baking.jpeg" alt="" />
+      <button class="btn">Menus</button>
+    </div>
+
+    <div class="divider">
+      <img src="./images/divider.svg" alt="" />
+      <img src="./images/divider.svg" class="invertDivider" alt="" />
+    </div>
+
+    <div class="parallaxSection">
+      <div class="parallaxContent">
+        <button class="btn btnSecondary">Reserve</button>
+      </div>
+    </div>
+
+    <div class="newsletterSection">
+      <img src="./images/wine.jpg" alt="wine" />
+      <div class="newsletterForm">
+        <h2>Updates from the kitchen</h2>
+        <p>Receive news and updates from our collection of restaurants.</p>
+        <div class="formNames">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="first name"
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="last name"
+          />
+        </div>
+        <input type="text" name="email" id="email" placeholder="email" />
+        <button class="btn">Sign up</button>
+      </div>
+    </div>
+
+    <div class="parallaxSection2"></div>
+
+    <div class="footer">
+      <div class="bottomNav">
+        <img src="./images/divider.svg" alt="" />
+        <ul class="navItems">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footerGrid">
+        <div class="address">
+          <p>
+            4721 IMPERIAL AVENUE <br />
+            CORUSCANT CITY, CORUSCANT SYSTEM <br />
+            GALACTIC EMPIRE 23912
+          </p>
+          <p>
+            CALL US<br />
+            +98902 (132-24) 56-78
+          </p>
+          <p>
+            FOR GENERAL INQUIRIES<br />
+            INFO@CORUSCANTCAFE.GAL
+          </p>
+          <p>
+            FOLLOW US<br />
+            @CORUSCANTCAFE
+          </p>
+          <p>
+            FOR ALL PR INQUIRIES<br />
+            PR@EMPIREHOSPITALITY.GAL
+          </p>
+        </div>
+        <h2 class="logo">The Coruscant Cafe</h2>
+        <div class="hours">
+          <p>
+            BRUNCH <br />
+            SATURDAY – SUNDAY <br />
+            10:00 AM – 2:30 PM <br />
+          </p>
+          <p>
+            LUNCH <br />
+            WEEKDAYS <br />
+            11:30 AM – 2:30 PM <br />
+          </p>
+          <p>
+            DINNER<br />
+            SUNDAY – THURSDAY<br />
+            5:00 PM – 10:00 PM<br />
+            FRIDAY & SATURDAY<br />
+            5:00 PM – 11:00 PM<br />
+          </p>
+        </div>
+      </div>
+
+      <a href="https://github.com/mathewbushuru/webpack-restaurant-SPA" target="_blank" class="source">
+        <img src="./images/github.png" alt="github" width="35px" />
+      </a>
+
+      <div class="bottomNav">
+        <span class="copyright">&copy; The Corruscant Cafe</span>
+        <img src="./divider.svg" class="invertDividerXY" alt="" />
+      </div>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
