@@ -63,4 +63,4 @@ Since it becomes difficult to track down warnings and errors to the location whe
 ### Progress
 ![progress](./src/images/progress.jpg)
 
-View website [here](https://github.com/mathewbushuru/webpack-restaurant-SPA)
+View website [here](https://mathewbushuru.github.io/webpack-restaurant-SPA/)
