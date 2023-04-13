@@ -31,7 +31,7 @@ webpack-restaurant-SPA
 
 ### Webpack
 
-I am also using my custom webpack config to bundle the source files. You can check out my setup at `./webpack.config.js`.
+I am using my custom webpack configuration to bundle all the source files. You can check out my setup at `./webpack.config.js`.
 
 The CSS styling is also done from the entry point javascript file. To be able to import a CSS file into a javascript module, I am using `style-loader` and `css-loader`. For images, I am using  webpack's built in `asset modules` to dynamically incorporate it in the dist bundle.
 
@@ -44,4 +44,4 @@ The CSS styling is also done from the entry point javascript file. To be able to
 - [x] Set up webpack CSS and image loaders
 - [ ] Dynamically generate page content from JS
 - [ ] Make site mobile responsive
-- [ ] Set up JSX Parser
+- [ ] Set up JSX loader
