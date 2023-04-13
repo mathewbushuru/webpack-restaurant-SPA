@@ -22,6 +22,7 @@ nav {
   font-family: "Rubik Microbe", cursive;
   font-size: 36px;
   color: var(--primary);
+  cursor: pointer;
 }
 .navRight {
   display: flex;

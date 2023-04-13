@@ -1,15 +1,16 @@
 import { createElement } from "../utils";
+import { Router } from "..";
 import Image from "./ui/Image";
 
 import dividerImgSrc from "../images/divider.svg";
 import ghIconSrc from "../images/github.png";
 
 const navItems = [
-  { name: "About", link: "#" },
-  { name: "Menu", link: "#" },
-  { name: "Gift Cards", link: "#" },
-  { name: "Career", link: "#" },
-  { name: "Contact", link: "#" },
+  { name: "About", link: "about" },
+  { name: "Menu", link: "menu" },
+  { name: "Gift Cards", link: "gift" },
+  { name: "Career", link: "career" },
+  { name: "Contact", link: "contact" },
 ];
 
 const addressItems = [
@@ -33,6 +34,7 @@ export default function Footer() {
   for (let el of navItems) {
     const navItem = document.createElement("li");
     navItem.textContent = el.name;
+    navItem.onclick = ()=>Router(el.link)
     navItemsElChildren.push(navItem);
   }
 
@@ -67,6 +69,7 @@ export default function Footer() {
     content: "The Coruscant Cafe",
     className: "logo",
   });
+  footerLogo.onclick = () => Router("home");
 
   let hoursChildren = [];
   for (let item of hoursItems) {
@@ -102,13 +105,13 @@ export default function Footer() {
     htmlEl: "span",
     className: "copyright",
     content: "&copy; The Corruscant Cafe",
-    innerHTML:true
+    innerHTML: true,
   });
-  const bottomDivider = Image("invertDividerXY",dividerImgSrc,"")
+  const bottomDivider = Image("invertDividerXY", dividerImgSrc, "");
 
   const copyrightSection = createElement({
     className: "bottomNav",
-    children: [copySpan,bottomDivider],
+    children: [copySpan, bottomDivider],
   });
 
   const footerElement = createElement({
