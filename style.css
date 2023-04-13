@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Poppins:ital,wght@0,400;0,600;1,200&family=Rubik+Microbe&display=swap");
+
+:root {
+  --bg-color: #f8f3eb;
+  --primary: #a27e51;
+  --secondary: #10312b;
+  --text-color: #2a2727;
+}
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Rubik Microbe", cursive;
+  font-size: 36px;
+  color: var(--primary);
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.navItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 20px;
+  color: var(--primary);
+  text-transform: uppercase;
+  display: flex;
+  gap: 12px;
+}
+.navItems > li {
+  cursor: pointer;
+}
+.navBtnGroup {
+  display: flex;
+  gap: 12px;
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: var(--bg-color);
+  background-color: var(--primary);
+}
+.btnSecondary {
+  background-color: var(--primary);
+  color: white;
+}
+.btnSecondary:hover {
+  opacity: 85%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  opacity: 70%;
+}
+.heroWrapper {
+  background-image: url("./images/wood-background.jpg");
+  background-size: contain;
+  height: 90vh;
+  position: relative;
+}
+.heroWrapper > img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+}
+.heroImg1 {
+  top: 10%;
+  left: 40%;
+  z-index: 10;
+}
+.heroImg2 {
+  top: 20%;
+  left: 18%;
+}
+.heroImg3 {
+  top: 35%;
+  left: 62%;
+}
+.heroReview {
+  min-height: 250px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.heroReview > p {
+  max-width: 800px;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--text-color);
+}
+.divider {
+  display: flex;
+  justify-content: space-between;
+}
+.invertDivider {
+  transform: scaleX(-1);
+}
+.invertDividerXY {
+  transform: scale(-1);
+}
+.menuSection {
+  min-height: 250px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.menuSection > img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+}
+.parallaxSection {
+  margin-top: 60px;
+  background-image: url("./images/interior.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.parallaxContent {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletterSection {
+  min-height: 250px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.newsletterSection > img {
+  width: 40%;
+  height: auto;
+  max-width: 550px;
+  border-radius: 20px;
+}
+.newsletterForm {
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  width: 40%;
+  max-width: 550px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+}
+.newsletterForm h2 {
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.newsletterForm p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: var(--text-color);
+}
+.formNames {
+  display: flex;
+  gap: 16px;
+}
+.newsletterForm input {
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  padding: 4px 8px;
+}
+input::placeholder {
+  color: var(--primary);
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+.parallaxSection2 {
+  background-image: url("./images/baking2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.footer {
+  background-color: var(--secondary);
+  padding: 40px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottomNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomNav > .navItems {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+.footer .copyright {
+  font-size: 18px;
+  color: #ffffff99;
+}
+.footerGrid {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: start;
+}
+.address {
+  justify-self: start;
+}
+.footerGrid .logo {
+  align-self: center;
+}
+.hours {
+  justify-self: end;
+}
+.address > p,
+.hours > p {
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #ffffffcc;
+  text-transform: uppercase;
+}
+.source{
+    text-align: center;
+}
