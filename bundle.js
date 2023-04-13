@@ -140,6 +140,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/HeroReview.js":
+/*!**************************************!*\
+  !*** ./src/components/HeroReview.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ HeroReview)\n/* harmony export */ });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ \"./src/utils.js\");\n/* harmony import */ var _ui_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/Button */ \"./src/components/ui/Button.js\");\n\n\n\nfunction HeroReview() {\n  const pEl = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.createElement)({\n    htmlEl: \"p\",\n    innerHTML: true,\n    content:\n      \" \\\"Countless motives exist for indulging in the culinary arts of the galaxy – to convene with allies, to display one's power, or to commemorate momentous occasions – but at the core, it is the necessity to satisfy one's hunger, and none can satiate quite like The Coruscant Cafe.\\\" <br /><br /> - EMPEROR Palpatine \",\n  });\n\n  const reserveBtn = (0,_ui_Button__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\"Reserve\");\n\n  const heroReviewElement = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.createElement)({\n    htmlEl: \"div\",\n    className: \"heroReview\",\n    children: [pEl, reserveBtn],\n  });\n\n  return heroReviewElement;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/components/HeroReview.js?");
+
+/***/ }),
+
 /***/ "./src/components/ui/Button.js":
 /*!*************************************!*\
   !*** ./src/components/ui/Button.js ***!
@@ -166,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Hero */ \"./src/components/Hero.js\");\n\n\n\n\n\n\nconst root = document.getElementById(\"content\");\n\nroot.appendChild((0,_components_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\nroot.appendChild((0,_components_Hero__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Hero */ \"./src/components/Hero.js\");\n/* harmony import */ var _components_HeroReview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/HeroReview */ \"./src/components/HeroReview.js\");\n\n\n\n\n\n\n\nconst root = document.getElementById(\"content\");\n\nroot.appendChild((0,_components_Header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\nroot.appendChild((0,_components_Hero__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\nroot.appendChild((0,_components_HeroReview__WEBPACK_IMPORTED_MODULE_3__[\"default\"])())\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/index.js?");
 
 /***/ }),
 
@@ -176,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createElement\": () => (/* binding */ createElement)\n/* harmony export */ });\nfunction createElement({\n  htmlEl = \"div\",\n  className = null,\n  content = null,\n  children = [],\n}) {\n  const element = document.createElement(htmlEl);\n\n  element.className = className;\n  element.textContent = content;\n\n  for (let child of children) {\n    element.appendChild(child);\n  }\n\n  return element;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createElement\": () => (/* binding */ createElement)\n/* harmony export */ });\nfunction createElement({\n  htmlEl = \"div\",\n  className = null,\n  content = null,\n  children = [],\n  innerHTML = false,\n}) {\n  const element = document.createElement(htmlEl);\n\n  element.className = className;\n  if (innerHTML) {\n    element.innerHTML = content;\n  } else {\n    element.textContent = content;\n  }\n\n  for (let child of children) {\n    element.appendChild(child);\n  }\n\n  return element;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/utils.js?");
 
 /***/ }),
 
