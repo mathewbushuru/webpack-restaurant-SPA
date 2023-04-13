@@ -79,7 +79,6 @@ a:hover {
 .heroWrapper {
   background-image: url("./images/wood-background.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
   height: 90vh;
   position: relative;
 }
