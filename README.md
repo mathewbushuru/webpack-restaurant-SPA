@@ -8,6 +8,10 @@ The webpage is a multi-tabbed landing page for a fictional restaurant in the Sta
 
 This takes our entry point script at `src/index.js` and generates `dist/bundle.js` that hydrates the HTML page
 
+`yarn watch`
+
+This script instructs webpack to watch all files within the dependency graph for changes and recompile the code automatically if any receive updates.
+
 ### Project configuration.
 
 ##### Directory structure
@@ -34,6 +38,8 @@ webpack-restaurant-SPA
 I am using my custom webpack configuration to bundle all the source files. You can check out my setup at `./webpack.config.js`.
 
 The CSS styling is also done from the entry point javascript file. To be able to import a CSS file into a javascript module, I am using `style-loader` and `css-loader`. For images, I am using  webpack's built in `asset modules` to dynamically incorporate it in the dist bundle.
+
+Since it becomes difficult to track down warnings and errors to the location where they occur after webpack compiles it, I am using `inline-source-map` to get a useful stack trace.
 
 ### Roadmap
 
