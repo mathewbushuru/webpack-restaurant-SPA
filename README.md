@@ -14,26 +14,26 @@ This takes our entry point script at `src/index.js` and generates `dist/bundle.j
 
 ```sh
 webpack-restaurant-SPA
-|- webpack.config.js            // webpack setup, plugins, etc
+|- webpack.config.js            // webpack setup, loaders, etc
 |- package.json                 // project dependencies
 |- yarn.lock
 |- /dist
     |- index.html               // empty html to be hydrated with JS
-    |- bundle.js                // webpack's output of bundled files
+    |- bundle.js                // webpacks output of bundled files
 |- /src
     |- /skeletonFiles           // desired end result
     |- index.js                 // app entry point
-    |- utils.js                 // utility functions e.g createElement
     |- /components              // reusable app blocks
         |- Header.js            // header component
         ...            
+    |- utils.js                 // utility functions e.g createElement
 ```
 
 ### Webpack
 
 I am also using my custom webpack config to bundle the source files. You can check out my setup at `./webpack.config.js`.
 
-The CSS styling is also done from the entry point javascript file. To be able to import a CSS file into a javascript module, I am using `style-loader` and `css-loader`.
+The CSS styling is also done from the entry point javascript file. To be able to import a CSS file into a javascript module, I am using `style-loader` and `css-loader`. For images, I am using  webpack's built in `asset modules` to dynamically incorporate it in the dist bundle.
 
 ### Roadmap
 
