@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Hero)\n/* harmony export */ });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ \"./src/utils.js\");\n/* harmony import */ var _ui_Image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/Image */ \"./src/components/ui/Image.js\");\n\n\n\nfunction Hero() {\n\n  const HeroImg1 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg1\",\n    \"/src/images/hero1.jpg\",\n    \"restaurant image\"\n  );\n  const HeroImg2 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg2\",\n    \"/src/images/hero2.jpg\",\n    \"restaurant image\"\n  );\n  const HeroImg3 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg3\",\n    \"/src/images/hero3.jpg\",\n    \"restaurant image\"\n  );\n\n  const heroEl = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.createElement)({\n    htmlEl: \"div\",\n    className: \"heroWrapper\",\n    children: [HeroImg1, HeroImg2,HeroImg3],\n  });\n\n  return heroEl;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/components/Hero.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Hero)\n/* harmony export */ });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ \"./src/utils.js\");\n/* harmony import */ var _ui_Image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/Image */ \"./src/components/ui/Image.js\");\n/* harmony import */ var _images_hero1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/hero1.jpg */ \"./src/images/hero1.jpg\");\n/* harmony import */ var _images_hero2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/hero2.jpg */ \"./src/images/hero2.jpg\");\n/* harmony import */ var _images_hero3_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/hero3.jpg */ \"./src/images/hero3.jpg\");\n\n\n\n\n\n\n\nfunction Hero() {\n  const HeroImg1 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg1\",\n    _images_hero1_jpg__WEBPACK_IMPORTED_MODULE_2__,\n    \"restaurant image\"\n  );\n  const HeroImg2 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg2\",\n    _images_hero2_jpg__WEBPACK_IMPORTED_MODULE_3__,\n    \"restaurant image\"\n  );\n  const HeroImg3 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg3\",\n    _images_hero3_jpg__WEBPACK_IMPORTED_MODULE_4__,\n    \"restaurant image\"\n  );\n\n  const heroEl = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.createElement)({\n    htmlEl: \"div\",\n    className: \"heroWrapper\",\n    children: [HeroImg1, HeroImg2, HeroImg3],\n  });\n\n  return heroEl;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/components/Hero.js?");
 
 /***/ }),
 
@@ -187,6 +187,36 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"7bb94e620b0bf03a12aa.jpg\";\n\n//# sourceURL=webpack://webpack-landing-page/./src/images/baking2.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hero1.jpg":
+/*!******************************!*\
+  !*** ./src/images/hero1.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"10110e80b02da243213d.jpg\";\n\n//# sourceURL=webpack://webpack-landing-page/./src/images/hero1.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hero2.jpg":
+/*!******************************!*\
+  !*** ./src/images/hero2.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6d59792155a10e25fcb2.jpg\";\n\n//# sourceURL=webpack://webpack-landing-page/./src/images/hero2.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hero3.jpg":
+/*!******************************!*\
+  !*** ./src/images/hero3.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e09ff708937df714aec8.jpg\";\n\n//# sourceURL=webpack://webpack-landing-page/./src/images/hero3.jpg?");
 
 /***/ }),
 
