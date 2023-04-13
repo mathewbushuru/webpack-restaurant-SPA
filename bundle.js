@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/Hero.js":
+/*!********************************!*\
+  !*** ./src/components/Hero.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Hero)\n/* harmony export */ });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ \"./src/utils.js\");\n/* harmony import */ var _ui_Image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ui/Image */ \"./src/components/ui/Image.js\");\n\n\n\nfunction Hero() {\n\n  const HeroImg1 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg1\",\n    \"/src/images/hero1.jpg\",\n    \"restaurant image\"\n  );\n  const HeroImg2 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg2\",\n    \"/src/images/hero2.jpg\",\n    \"restaurant image\"\n  );\n  const HeroImg3 = (0,_ui_Image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\n    \"heroImg3\",\n    \"/src/images/hero3.jpg\",\n    \"restaurant image\"\n  );\n\n  const heroEl = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.createElement)({\n    htmlEl: \"div\",\n    className: \"heroWrapper\",\n    children: [HeroImg1, HeroImg2,HeroImg3],\n  });\n\n  return heroEl;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/components/Hero.js?");
+
+/***/ }),
+
 /***/ "./src/components/ui/Button.js":
 /*!*************************************!*\
   !*** ./src/components/ui/Button.js ***!
@@ -30,13 +40,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/ui/Image.js":
+/*!************************************!*\
+  !*** ./src/components/ui/Image.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Image)\n/* harmony export */ });\nfunction Image(imgClass , imgSrc, imgAlt ) {\n  const imageEl = document.createElement(\"img\");\n\n  imageEl.className = imgClass;\n  imageEl.setAttribute(\"src\", imgSrc);\n  imageEl.setAttribute(\"alt\", imgAlt);\n\n  return imageEl;\n}\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/components/ui/Image.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n\n\n\n\nconst root = document.getElementById(\"content\");\n\nroot.appendChild((0,_components_Header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Header */ \"./src/components/Header.js\");\n/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Hero */ \"./src/components/Hero.js\");\n\n\n\n\n\nconst root = document.getElementById(\"content\");\n\nroot.appendChild((0,_components_Header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\nroot.appendChild((0,_components_Hero__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\n\n\n//# sourceURL=webpack://webpack-landing-page/./src/index.js?");
 
 /***/ }),
 
