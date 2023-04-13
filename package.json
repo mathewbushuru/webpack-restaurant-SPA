@@ -2,8 +2,8 @@
   "name": "webpack-landing-page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "license":"ISC",
+  "private": true,
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
