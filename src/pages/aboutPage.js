@@ -11,8 +11,6 @@ const aboutElements = [
   Header,
   ComingSoon,
   Divider,
-  ParallaxSection1,
-  NewsletterSection,
   ParallaxSection2,
   Footer,
 ];
@@ -30,7 +28,7 @@ export default function AboutPage() {
 function ComingSoon() {
   const h1El = createElement({
     htmlEl: "h1",
-    content: "About page coming soon!",
+    content: "About Page!",
     className:"comingSoon"
   });
 

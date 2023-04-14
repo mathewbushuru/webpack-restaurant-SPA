@@ -11,8 +11,6 @@ const careerElements = [
   Header,
   ComingSoon,
   Divider,
-  ParallaxSection1,
-  NewsletterSection,
   ParallaxSection2,
   Footer,
 ];
@@ -30,7 +28,7 @@ export default function CareerPage() {
 function ComingSoon() {
   const h1El = createElement({
     htmlEl: "h1",
-    content: "Career page coming soon!",
+    content: "Career Page!",
     className:"comingSoon"
   });
 

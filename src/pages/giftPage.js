@@ -11,8 +11,6 @@ const giftElements = [
   Header,
   ComingSoon,
   Divider,
-  ParallaxSection1,
-  NewsletterSection,
   ParallaxSection2,
   Footer,
 ];
@@ -30,7 +28,7 @@ export default function GiftPage() {
 function ComingSoon() {
   const h1El = createElement({
     htmlEl: "h1",
-    content: "Gift Cards page coming soon!",
+    content: "Gift Cards Page!",
     className:"comingSoon"
   });
 

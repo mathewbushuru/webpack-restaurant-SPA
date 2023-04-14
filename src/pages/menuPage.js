@@ -11,8 +11,6 @@ const menuElements = [
   Header,
   ComingSoon,
   Divider,
-  ParallaxSection1,
-  NewsletterSection,
   ParallaxSection2,
   Footer,
 ];
@@ -30,7 +28,7 @@ export default function MenuPage() {
 function ComingSoon() {
   const h1El = createElement({
     htmlEl: "h1",
-    content: "Menu page coming soon!",
+    content: "Menu Page!",
     className:"comingSoon"
   });
 

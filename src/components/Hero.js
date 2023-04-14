@@ -1,9 +1,12 @@
 import { createElement } from "../utils";
 import Image from "./ui/Image";
 
-import ImgSrc1 from "../images/hero1.jpg";
-import ImgSrc2 from "../images/hero2.jpg";
-import ImgSrc3 from "../images/hero3.jpg";
+import ImgSrc1 from "../images/new/meal2.png";
+import ImgSrc2 from "../images/new/meals.png";
+import ImgSrc3 from "../images/new/droid3.png";
+// import ImgSrc1 from "../images/hero1.jpg";
+// import ImgSrc2 from "../images/hero2.jpg";
+// import ImgSrc3 from "../images/hero3.jpg";
 
 export default function Hero() {
   const HeroImg1 = Image(

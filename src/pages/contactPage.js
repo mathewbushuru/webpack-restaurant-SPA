@@ -11,8 +11,6 @@ const contactElements = [
   Header,
   ComingSoon,
   Divider,
-  ParallaxSection1,
-  NewsletterSection,
   ParallaxSection2,
   Footer,
 ];
@@ -30,7 +28,7 @@ export default function ContactPage() {
 function ComingSoon() {
   const h1El = createElement({
     htmlEl: "h1",
-    content: "Contact page coming soon!",
+    content: "Contact Page!",
     className:"comingSoon"
   });
 
